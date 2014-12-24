@@ -1,0 +1,4 @@
+class RemoveVideoId < ActiveRecord::Migration
+  def change
+  end
+end

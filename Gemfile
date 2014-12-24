@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
-ruby '2.1.1'
+ruby '2.0.0'
 
+gem 'eventmachine', '1.0.3'
 gem 'bootstrap-sass'
 gem 'coffee-rails'
 gem 'rails', '4.1.1'
@@ -9,6 +10,7 @@ gem 'sass-rails'
 gem 'uglifier'
 gem 'jquery-rails'
 gem 'pg'
+gem 'therubyracer', platforms: :ruby
 
 group :development do
   gem 'thin'
@@ -19,11 +21,13 @@ end
 group :development, :test do
   gem 'pry'
   gem 'pry-nav'
-  gem 'rspec-rails', '2.99'
+  gem 'rspec-rails'
+  gem 'rspec-core'
 end
 
 group :test do
   gem 'database_cleaner', '1.2.0'
+  gem 'shoulda-matchers'
 end
 
 group :production do

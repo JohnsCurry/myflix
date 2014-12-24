@@ -1,0 +1,4 @@
+%article.video_category
+  -@results.each do |result|
+    = link_to result do
+      %img(src="#{video.small_url}")
