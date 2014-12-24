@@ -11,6 +11,8 @@ gem 'uglifier'
 gem 'jquery-rails'
 gem 'pg'
 gem 'therubyracer', platforms: :ruby
+gem 'bootstrap_form'
+gem 'bcrypt'
 
 group :development do
   gem 'thin'
