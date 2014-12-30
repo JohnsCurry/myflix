@@ -1,0 +1,5 @@
+Fabricator(:user) do
+  email {Faker::Internet.email}
+  password
+  full_name
+end
