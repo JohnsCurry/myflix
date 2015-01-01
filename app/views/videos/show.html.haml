@@ -7,7 +7,7 @@
         %header
           %h3 Futurama
           %span Rating: 4.5/5.0
-        %p Pizza boy Philip J. Fry awakens in the 31st century after 1,000 years of cryogenic preservation in this animated series. After he gets a job at an interplanetary delivery service, Fry embarks on ridiculous escapades to make sense of his predicament.
+        %p 
         .actions
           %a.btn.btn-primary(href="") Watch Now
           %a.btn.btn-default(href="") + My Queue
@@ -19,7 +19,7 @@
         %fieldset
           .form-group
             %label Rate this video
-            = f.select :rating, options_for_select([5,4,3,2,1].map {|number| [pluralize(number, "Star")]})
+            = f.select :rating, options_for_video_reviews
           .form-group
             %label Write Review
             = f.text_area :content, rows: 6, class: "span6"
