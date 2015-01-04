@@ -1,0 +1,9 @@
+require 'spec_helper'
+
+feature 'User following' do
+  scenario "user follows and unfollows someone" do
+    category = Fabricate(:category)
+    video = Fabricate(:video, category: category)
+    sign_in
+  end
+end
