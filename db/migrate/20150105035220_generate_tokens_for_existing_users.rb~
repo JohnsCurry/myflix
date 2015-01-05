@@ -1,0 +1,4 @@
+class GenerateTokensForExistingUsers < ActiveRecord::Migration
+  def change
+  end
+end

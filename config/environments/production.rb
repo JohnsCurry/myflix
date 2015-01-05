@@ -4,6 +4,7 @@ Myflix::Application.configure do
   config.eager_load = true
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
+  config.action_mailer.default_url_options = { host: 'localhost:3000' }
 
   config.serve_static_assets = false
 
