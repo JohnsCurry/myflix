@@ -7,6 +7,7 @@ Myflix::Application.routes.draw do
   get 'sign_out', to: "sessions#destroy"
   get 'my_queue', to: "queue_items#index"
   get 'people', to: "relationships#index"
+  get 'register/:token', to: "users#new_with_invitation_token", as: 'register_with_token'
   get 'forgot_password', to: 'forgot_passwords#new'
   get 'forgot_password_confirmation', to: 'forgot_passwords#confirm'
   resources :forgot_passwords, only: [:create]

@@ -1,0 +1,4 @@
+class AddTokenToInvitations < ActiveRecord::Migration
+  def change
+  end
+end

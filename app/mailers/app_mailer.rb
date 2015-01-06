@@ -11,7 +11,6 @@ class AppMailer < ActionMailer::Base
 
   def send_invitation_email(invitation)
     @invitation = invitation
-    binding.pry
     mail to: invitation.recipient_email, from: "info@myflix.com", subject: "Invitation to join MyFlix"
   end
 end
