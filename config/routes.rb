@@ -24,6 +24,6 @@ Myflix::Application.routes.draw do
   resources :queue_items, only: [:create, :destroy]
   resources :relationships, only: [:create, :destroy]
   resources :password_resets, only: [:show, :create]
-  get 'expired_token', to: 'password_resets#expired_token'
+  get 'expired_token', to: 'pages#expired_token'
   post 'update_queue', to: "queue_items#update_queue"
 end

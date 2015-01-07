@@ -15,6 +15,7 @@ gem 'bootstrap_form'
 gem 'bcrypt'
 gem 'fabrication'
 gem 'faker'
+gem "sentry-raven", :github => "getsentry/raven-ruby"
 
 group :development do
   gem 'thin'
